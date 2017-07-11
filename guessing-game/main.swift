@@ -20,7 +20,12 @@ while playingGame {
     print("Please guess a number between 0 and 100!")
     var userGuess = Int(readLine()!)!
     
- 
+    //Checks to see if the number is a valid number
+    while userGuess < 0 || userGuess > 100 {
+        print("Please input a valid number")
+        userGuess = Int(readLine()!)!
+    }
+   
     
 }
 
