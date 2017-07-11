@@ -36,7 +36,22 @@ while playingGame {
             userGuess = Int(readLine()!)!
         }
         
-       
+        //Run this code when the user guesses the correct number
+        if userGuess == secretNumber {
+            print("You got the secret number would you like to play again?")
+            print("Please type yes or no")
+            var stillPlaying = readLine()!.uppercased()
+            
+            while stillPlaying != "YES" && stillPlaying != "NO" {
+                print("Please type yes or no")
+                stillPlaying = readLine()!.uppercased()
+            }
+            if stillPlaying == "NO" {
+                print("Thanks for playing!")
+                playingGame = false
+                
+            }
+        }
     }
     
 }
