@@ -13,8 +13,15 @@ var playingGame = true
 
 //This loop will run while the game is running
 while playingGame {
+    //Number that the user is trying to guess
+    let secretNumber = arc4random_uniform(100)
     
-   
+    print("Welcome to the number guessing game!")
+    print("Please guess a number between 0 and 100!")
+    var userGuess = Int(readLine()!)!
+    
+ 
+    
 }
 
 
