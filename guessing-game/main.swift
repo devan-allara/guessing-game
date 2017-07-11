@@ -25,7 +25,19 @@ while playingGame {
         print("Please input a valid number")
         userGuess = Int(readLine()!)!
     }
-   
+    
+    //Loop runs while the user has not guessed the correct number
+    while userGuess != secretNumber {
+        if secretNumber > userGuess {
+            print("Guess a higher number")
+            userGuess = Int(readLine()!)!
+        } else if secretNumber < userGuess {
+            print("Guess a lower number")
+            userGuess = Int(readLine()!)!
+        }
+        
+       
+    }
     
 }
 
